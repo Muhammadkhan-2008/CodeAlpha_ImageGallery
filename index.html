@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="gallery-app">
+        <!-- App Header -->
+        <header class="app-header">
+            <h1 id="currentTitle">Photos</h1>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Photos Tab -->
+            <div class="tab-content active" id="photosTab">
+                <!-- Recent Header -->
+                <div class="recent-header">
+                    <h2>Aug, 2027</h2>
+                </div>
+
+                <!-- Month Section -->
+                <div class="section-header">
+                    <h3>Jan</h3>
+                </div>
+
+                <!-- Photo Grid -->
+                <div class="photo-grid">
+                    <!-- Photo 1 -->
+                    <div class="photo-card" data-photo-id="1">
+                        <div class="photo-thumb">
+                            <img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Project">
+                        </div>
+                        <div class="photo-info">
+                            <div class="photo-title">M. A. HAYI</div>
+                            <div class="photo-subtitle">mazey.ru</div>
+                        </div>
+                        <div class="photo-tag">Trods</div>
+                    </div>
+
+                    <!-- Photo 2 -->
+                    <div class="photo-card" data-photo-id="2">
+                        <div class="photo-thumb">
+                            <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Project">
+                        </div>
+                        <div class="photo-info">
+                            <div class="photo-title">M. A. HAYI</div>
+                            <div class="photo-subtitle">mazey.ru</div>
+                        </div>
+                        <div class="photo-tag">Trods</div>
+                    </div>
+
+                    <!-- Photo 3 -->
+                    <div class="photo-card" data-photo-id="3">
+                        <div class="photo-thumb">
+                            <img src="https://images.pexels.com/photos/2525903/pexels-photo-2525903.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Project">
+                        </div>
+                        <div class="photo-info">
+                            <div class="photo-title">M. A.</div>
+                            <div class="photo-subtitle">mazey.ru</div>
+                        </div>
+                        <div class="photo-tag">Trods</div>
+                    </div>
+                </div>
+
+                <!-- Success Section -->
+                <div class="section-header">
+                    <h3>Success</h3>
+                </div>
+
+                <!-- Success Photo Grid -->
+                <div class="photo-grid">
+                    <!-- Photo 4 -->
+                    <div class="photo-card" data-photo-id="4">
+                        <div class="photo-thumb">
+                            <img src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Project">
+                        </div>
+                        <div class="photo-info">
+                            <div class="photo-title">M. A. HAYI</div>
+                            <div class="photo-subtitle">mazey.ru</div>
+                        </div>
+                        <div class="photo-tag">Trods</div>
+                    </div>
+
+                    <!-- Photo 5 -->
+                    <div class="photo-card" data-photo-id="5">
+                        <div class="photo-thumb">
+                            <img src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Project">
+                        </div>
+                        <div class="photo-info">
+                            <div class="photo-title">M. A. HAYI</div>
+                            <div class="photo-subtitle">mazey.ru</div>
+                        </div>
+                        <div class="photo-tag">Trods</div>
+                    </div>
+
+                    <!-- Photo 6 -->
+                    <div class="photo-card" data-photo-id="6">
+                        <div class="photo-thumb">
+                            <img src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Project">
+                        </div>
+                        <div class="photo-info">
+                            <div class="photo-title">M. A.</div>
+                            <div class="photo-subtitle">mazey.ru</div>
+                        </div>
+                        <div class="photo-tag">Trods</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Albums Tab -->
+            <div class="tab-content" id="albumsTab">
+                <div class="album-list">
+                    <!-- Album 1 -->
+                    <div class="album-item">
+                        <div class="album-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <div class="album-info">
+                            <div class="album-name">Camera</div>
+                            <div class="album-count">207 photos</div>
+                        </div>
+                        <div class="album-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <!-- Album 2 -->
+                    <div class="album-item">
+                        <div class="album-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <div class="album-info">
+                            <div class="album-name">Screenshot</div>
+                            <div class="album-count">467 photos</div>
+                        </div>
+                        <div class="album-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <!-- Album 3 -->
+                    <div class="album-item">
+                        <div class="album-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <div class="album-info">
+                            <div class="album-name">Restored</div>
+                            <div class="album-count">2 photos</div>
+                        </div>
+                        <div class="album-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <!-- Album 4 -->
+                    <div class="album-item">
+                        <div class="album-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <div class="album-info">
+                            <div class="album-name">Download</div>
+                            <div class="album-count">1183 photos</div>
+                        </div>
+                        <div class="album-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <!-- Album 5 -->
+                    <div class="album-item">
+                        <div class="album-icon">
+                            <i class="fab fa-facebook-messenger"></i>
+                        </div>
+                        <div class="album-info">
+                            <div class="album-name">Messenger</div>
+                            <div class="album-count">2 photos</div>
+                        </div>
+                        <div class="album-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <!-- Album 6 -->
+                    <div class="album-item">
+                        <div class="album-icon">
+                            <i class="fab fa-facebook-messenger"></i>
+                        </div>
+                        <div class="album-info">
+                            <div class="album-name">Messenger</div>
+                            <div class="album-count">1 photo</div>
+                        </div>
+                        <div class="album-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <!-- Album 7 -->
+                    <div class="album-item">
+                        <div class="album-icon">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                        </div>
+                        <div class="album-info">
+                            <div class="album-name">Remini</div>
+                            <div class="album-count">11 photos</div>
+                        </div>
+                        <div class="album-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <!-- Album 8 -->
+                    <div class="album-item">
+                        <div class="album-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="album-info">
+                            <div class="album-name">WhatsApp</div>
+                            <div class="album-count">42 photos</div>
+                        </div>
+                        <div class="album-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <!-- Album 9 -->
+                    <div class="album-item">
+                        <div class="album-icon">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="album-info">
+                            <div class="album-name">facebook</div>
+                            <div class="album-count">24 photos</div>
+                        </div>
+                        <div class="album-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools Tab -->
+            <div class="tab-content" id="toolsTab">
+                <div class="tools-header">
+                    <h2>Tools</h2>
+                </div>
+
+                <!-- Stats -->
+                <div class="tools-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">4621</div>
+                        <div class="stat-label">All photos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">2.0%</div>
+                        <div class="stat-label">Memory consumed by photos</div>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="tools-actions">
+                    <div class="action-card">
+                        <div class="action-icon">
+                            <i class="fas fa-broom"></i>
+                        </div>
+                        <div class="action-text">
+                            <div class="action-title">Clean photos</div>
+                            <div class="action-desc">Remove duplicates and blurry photos</div>
+                        </div>
+                        <div class="action-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="action-card">
+                        <div class="action-icon">
+                            <i class="fas fa-compress-alt"></i>
+                        </div>
+                        <div class="action-text">
+                            <div class="action-title">Compress photos</div>
+                            <div class="action-desc">Reduce file size without losing quality</div>
+                        </div>
+                        <div class="action-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Section -->
+                <div class="more-section">
+                    <h3>More</h3>
+
+                    <div class="more-item">
+                        <div class="more-checkbox">
+                            <div class="checkbox"></div>
+                        </div>
+                        <div class="more-text">
+                            <div class="more-title">Collage</div>
+                            <div class="more-desc">Collage as you like</div>
+                        </div>
+                    </div>
+
+                    <div class="more-item">
+                        <div class="more-checkbox">
+                            <div class="checkbox checked">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                        <div class="more-text">
+                            <div class="more-title">XHide</div>
+                            <div class="more-desc">Private photo safe</div>
+                        </div>
+                    </div>
+
+                    <div class="more-item">
+                        <div class="more-checkbox">
+                            <div class="checkbox"></div>
+                        </div>
+                        <div class="more-text">
+                            <div class="more-title">XShare</div>
+                            <div class="more-desc">Quickly share photos</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notification -->
+                <div class="notification">
+                    <i class="fas fa-info-circle"></i>
+                    Screenshot has been saved to Pictures/Screenshot
+                </div>
+            </div>
+        </main>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <button class="nav-btn active" data-tab="photos">
+                <i class="fas fa-images"></i>
+                <span>Photos</span>
+            </button>
+            <button class="nav-btn" data-tab="albums">
+                <i class="fas fa-folder"></i>
+                <span>Albums</span>
+            </button>
+            <button class="nav-btn" data-tab="tools">
+                <i class="fas fa-tools"></i>
+                <span>Tools</span>
+            </button>
+        </nav>
+    </div>
+
+    <!-- Photo Viewer Modal -->
+    <div class="photo-viewer" id="photoViewer">
+        <div class="viewer-header">
+            <button class="back-btn" id="closeViewer">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="viewer-title">Photo</div>
+            <button class="more-btn">
+                <i class="fas fa-ellipsis-h"></i>
+            </button>
+        </div>
+
+        <div class="viewer-content">
+            <img id="viewerImage" src="" alt="">
+        </div>
+
+        <div class="viewer-footer">
+            <div class="photo-details">
+                <div class="detail-title" id="viewerPhotoTitle">M. A. HAYI</div>
+                <div class="detail-subtitle" id="viewerPhotoSubtitle">mazey.ru • Trods</div>
+            </div>
+            <div class="photo-actions">
+                <button class="action-btn">
+                    <i class="fas fa-heart"></i>
+                </button>
+                <button class="action-btn">
+                    <i class="fas fa-share-alt"></i>
+                </button>
+                <button class="action-btn">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
